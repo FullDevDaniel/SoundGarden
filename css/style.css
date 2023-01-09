@@ -13,6 +13,65 @@ header {
     width: 100%;
     background-color: #fff;
 }
+
+.container-slide{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: 80vh;
+    background-color: black;
+    margin: 10vh auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px black;
+}
+
+.container-itens {
+    position: absolute;
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item{
+    width: 80vw;
+    height: 80vh;
+    transition: all 1s;
+}
+
+.item:first-child {
+    margin-left: -100%;
+}
+
+.item img{
+    width: 80vw;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+.action-button {
+    font: bold 30px sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    color: #00000000;
+    user-select: none;
+    z-index: 1;
+
+}
+
+.action-button:hover{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+
+}
+
+
 aside {
     min-height: 100vh;
 }
@@ -47,6 +106,15 @@ footer nav ul{
 
 footer nav ul li  {
     padding: 10px;
+}
+
+footer nav ul a{
+    text-decoration: none;
+}
+
+footer nav ul a:hover{
+    color: black;
+    font-weight: 700;
 }
 
 .required {
